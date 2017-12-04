@@ -1,0 +1,17 @@
+\begin{appendices}
+\renewcommand\chaptername{Appendix}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\fancyhead[RE]{\small\leftmark}
+% Section in the left on even pages}
+\fancyhead[LO]{\small\rightmark}%Section in the left on odd pages
+
+\chapter[An appendix title]{An appendix title}% Main chapter title
+\chaptermark{An appendix running title}
+
+\label{Appendix1} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+
+
+\blindtext[10]
+
+\end{appendices}
